@@ -17,6 +17,13 @@
 		346262B325E3FD0200C78FD7 /* cs441_multipleScreensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262B225E3FD0200C78FD7 /* cs441_multipleScreensTests.m */; };
 		346262BE25E3FD0200C78FD7 /* cs441_multipleScreensUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262BD25E3FD0200C78FD7 /* cs441_multipleScreensUITests.m */; };
 		346262D325E4004400C78FD7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262D225E4004400C78FD7 /* SecondViewController.m */; };
+		34AB42F025E6A30100B5A90A /* xerox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42EF25E6A30100B5A90A /* xerox.jpg */; };
+		34AB42F525E6A59B00B5A90A /* ashe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42F425E6A59B00B5A90A /* ashe.jpg */; };
+		34AB42FA25E6A5F300B5A90A /* tiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42F925E6A5F300B5A90A /* tiger.jpg */; };
+		34AB42FF25E6A66400B5A90A /* otsy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42FE25E6A66400B5A90A /* otsy.jpg */; };
+		34AB430525E6A8A500B5A90A /* OtsyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB430425E6A8A500B5A90A /* OtsyViewController.m */; };
+		34AB430B25E6A9D000B5A90A /* AsheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB430A25E6A9D000B5A90A /* AsheViewController.m */; };
+		34AB431125E6AA1100B5A90A /* TigerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AB431025E6AA1100B5A90A /* TigerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,16 @@
 		346262BF25E3FD0200C78FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		346262D125E4004400C78FD7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		346262D225E4004400C78FD7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		34AB42EF25E6A30100B5A90A /* xerox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xerox.jpg; sourceTree = "<group>"; };
+		34AB42F425E6A59B00B5A90A /* ashe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ashe.jpg; sourceTree = "<group>"; };
+		34AB42F925E6A5F300B5A90A /* tiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpg; sourceTree = "<group>"; };
+		34AB42FE25E6A66400B5A90A /* otsy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = otsy.jpg; sourceTree = "<group>"; };
+		34AB430325E6A8A500B5A90A /* OtsyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtsyViewController.h; sourceTree = "<group>"; };
+		34AB430425E6A8A500B5A90A /* OtsyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtsyViewController.m; sourceTree = "<group>"; };
+		34AB430925E6A9D000B5A90A /* AsheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AsheViewController.h; path = "cs441-multipleScreens/AsheViewController.h"; sourceTree = "<group>"; };
+		34AB430A25E6A9D000B5A90A /* AsheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AsheViewController.m; path = "cs441-multipleScreens/AsheViewController.m"; sourceTree = "<group>"; };
+		34AB430F25E6AA1100B5A90A /* TigerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TigerViewController.h; sourceTree = "<group>"; };
+		34AB431025E6AA1100B5A90A /* TigerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +104,8 @@
 		3462628A25E3FD0100C78FD7 = {
 			isa = PBXGroup;
 			children = (
+				34AB430925E6A9D000B5A90A /* AsheViewController.h */,
+				34AB430A25E6A9D000B5A90A /* AsheViewController.m */,
 				3462629525E3FD0100C78FD7 /* cs441-multipleScreens */,
 				346262B125E3FD0200C78FD7 /* cs441-multipleScreensTests */,
 				346262BC25E3FD0200C78FD7 /* cs441-multipleScreensUITests */,
@@ -116,10 +135,18 @@
 				3462629C25E3FD0100C78FD7 /* ViewController.h */,
 				3462629D25E3FD0100C78FD7 /* ViewController.m */,
 				3462629F25E3FD0100C78FD7 /* Main.storyboard */,
+				34AB430F25E6AA1100B5A90A /* TigerViewController.h */,
+				34AB431025E6AA1100B5A90A /* TigerViewController.m */,
+				34AB430325E6A8A500B5A90A /* OtsyViewController.h */,
+				34AB430425E6A8A500B5A90A /* OtsyViewController.m */,
 				346262A225E3FD0200C78FD7 /* Assets.xcassets */,
 				346262A425E3FD0200C78FD7 /* LaunchScreen.storyboard */,
 				346262A725E3FD0200C78FD7 /* Info.plist */,
 				346262A825E3FD0200C78FD7 /* main.m */,
+				34AB42EF25E6A30100B5A90A /* xerox.jpg */,
+				34AB42F425E6A59B00B5A90A /* ashe.jpg */,
+				34AB42F925E6A5F300B5A90A /* tiger.jpg */,
+				34AB42FE25E6A66400B5A90A /* otsy.jpg */,
 			);
 			path = "cs441-multipleScreens";
 			sourceTree = "<group>";
@@ -245,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				346262A625E3FD0200C78FD7 /* LaunchScreen.storyboard in Resources */,
+				34AB42F525E6A59B00B5A90A /* ashe.jpg in Resources */,
+				34AB42FF25E6A66400B5A90A /* otsy.jpg in Resources */,
 				346262A325E3FD0200C78FD7 /* Assets.xcassets in Resources */,
+				34AB42F025E6A30100B5A90A /* xerox.jpg in Resources */,
 				346262A125E3FD0100C78FD7 /* Main.storyboard in Resources */,
+				34AB42FA25E6A5F300B5A90A /* tiger.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +304,12 @@
 			files = (
 				346262D325E4004400C78FD7 /* SecondViewController.m in Sources */,
 				3462629E25E3FD0100C78FD7 /* ViewController.m in Sources */,
+				34AB431125E6AA1100B5A90A /* TigerViewController.m in Sources */,
 				3462629825E3FD0100C78FD7 /* AppDelegate.m in Sources */,
 				346262A925E3FD0200C78FD7 /* main.m in Sources */,
 				3462629B25E3FD0100C78FD7 /* SceneDelegate.m in Sources */,
+				34AB430B25E6A9D000B5A90A /* AsheViewController.m in Sources */,
+				34AB430525E6A8A500B5A90A /* OtsyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
