@@ -21,91 +21,74 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    SecondViewController *vcXerox = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    vcXerox.isFav = YES;
-//    OtsyViewController *vcOtsy = [[OtsyViewController alloc] initWithNibName:@"OtsyViewController" bundle:nil];
-//    vcOtsy.isFav = NO;
-//    AsheViewController *vcAshe = [[AsheViewController alloc] initWithNibName:@"AsheViewController" bundle:nil];
-//    vcAshe.isFav = NO;
-//    TigerViewController *vcTiger = [[TigerViewController alloc] initWithNibName:@"TigerViewController" bundle:nil];
-//    vcTiger.isFav = NO;
-//    [self presentViewController:vcXerox animated:YES completion:nil];
-//    [self presentViewController:vcOtsy animated:YES completion:nil];
-//    [self presentViewController:vcAshe animated:YES completion:nil];
-//    [self presentViewController:vcTiger animated:YES completion:nil];
+    
+    isXerox = NO;
+    isOtsy = NO;
+    isAshe = NO;
+    isTiger = NO;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"in prep");
     if([segue.identifier isEqualToString:@"mainToXerox"]){
-        NSLog(@"in prep IF ");
+        NSLog(@"xerox");
         SecondViewController *destinationVc = segue.destinationViewController;
         Connector *connectorClass = [[Connector alloc] init];
-        connectorClass.stringBeingPassed = tf.text;
+        connectorClass.isXerox = isXerox;
         destinationVc.connectorClass = connectorClass;
-        NSLog(@"after");
+    }
+    if([segue.identifier isEqualToString:@"mainToOtsy"]){
+        NSLog(@"otsy");
+        SecondViewController *destinationVc = segue.destinationViewController;
+        Connector *connectorClass = [[Connector alloc] init];
+        connectorClass.isOtsy = isOtsy;
+        destinationVc.connectorClass = connectorClass;
+    }
+    if([segue.identifier isEqualToString:@"mainToAshe"]){
+        NSLog(@"ashe");
+        SecondViewController *destinationVc = segue.destinationViewController;
+        Connector *connectorClass = [[Connector alloc] init];
+        connectorClass.isAshe = isAshe;
+        destinationVc.connectorClass = connectorClass;
+    }
+    if([segue.identifier isEqualToString:@"mainToTiger"]){
+        NSLog(@"tiger");
+        SecondViewController *destinationVc = segue.destinationViewController;
+        Connector *connectorClass = [[Connector alloc] init];
+        connectorClass.isTiger = isTiger;
+        destinationVc.connectorClass = connectorClass;
     }
 }
-//
-//- (IBAction)clickedXerox:(id)sender
-//{
-//    SecondViewController *vcXerox = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    vcXerox.isFav = YES;
-//    OtsyViewController *vcOtsy = [[OtsyViewController alloc] initWithNibName:@"OtsyViewController" bundle:nil];
-//    vcOtsy.isFav = NO;
-//    AsheViewController *vcAshe = [[AsheViewController alloc] initWithNibName:@"AsheViewController" bundle:nil];
-//    vcAshe.isFav = NO;
-//    TigerViewController *vcTiger = [[TigerViewController alloc] initWithNibName:@"TigerViewController" bundle:nil];
-//    vcTiger.isFav = NO;
-//    [self presentViewController:vcXerox animated:YES completion:nil];
-//    [self presentViewController:vcOtsy animated:YES completion:nil];
-//    [self presentViewController:vcAshe animated:YES completion:nil];
-//    [self presentViewController:vcTiger animated:YES completion:nil];}
-//
-//- (IBAction)clickedOtsy:(id)sender
-//{
-//    SecondViewController *vcXerox = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    vcXerox.isFav = NO;
-//    OtsyViewController *vcOtsy = [[OtsyViewController alloc] initWithNibName:@"OtsyViewController" bundle:nil];
-//    vcOtsy.isFav = YES;
-//    AsheViewController *vcAshe = [[AsheViewController alloc] initWithNibName:@"AsheViewController" bundle:nil];
-//    vcAshe.isFav = NO;
-//    TigerViewController *vcTiger = [[TigerViewController alloc] initWithNibName:@"TigerViewController" bundle:nil];
-//    vcTiger.isFav = NO;
-//    [self presentViewController:vcXerox animated:YES completion:nil];
-//    [self presentViewController:vcOtsy animated:YES completion:nil];
-//    [self presentViewController:vcAshe animated:YES completion:nil];
-//    [self presentViewController:vcTiger animated:YES completion:nil];}
-//
-//- (IBAction)clickedAshe:(id)sender
-//{
-//    SecondViewController *vcXerox = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    vcXerox.isFav = NO;
-//    OtsyViewController *vcOtsy = [[OtsyViewController alloc] initWithNibName:@"OtsyViewController" bundle:nil];
-//    vcOtsy.isFav = NO;
-//    AsheViewController *vcAshe = [[AsheViewController alloc] initWithNibName:@"AsheViewController" bundle:nil];
-//    vcAshe.isFav = YES;
-//    TigerViewController *vcTiger = [[TigerViewController alloc] initWithNibName:@"TigerViewController" bundle:nil];
-//    vcTiger.isFav = NO;
-//    [self presentViewController:vcXerox animated:YES completion:nil];
-//    [self presentViewController:vcOtsy animated:YES completion:nil];
-//    [self presentViewController:vcAshe animated:YES completion:nil];
-//    [self presentViewController:vcTiger animated:YES completion:nil];}
-//
-//- (IBAction)clickedTiger:(id)sender
-//{
-//    SecondViewController *vcXerox = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    vcXerox.isFav = NO;
-//    OtsyViewController *vcOtsy = [[OtsyViewController alloc] initWithNibName:@"OtsyViewController" bundle:nil];
-//    vcOtsy.isFav = NO;
-//    AsheViewController *vcAshe = [[AsheViewController alloc] initWithNibName:@"AsheViewController" bundle:nil];
-//    vcAshe.isFav = NO;
-//    TigerViewController *vcTiger = [[TigerViewController alloc] initWithNibName:@"TigerViewController" bundle:nil];
-//    vcTiger.isFav = YES;
-//    [self presentViewController:vcXerox animated:YES completion:nil];
-//    [self presentViewController:vcOtsy animated:YES completion:nil];
-//    [self presentViewController:vcAshe animated:YES completion:nil];
-//    [self presentViewController:vcTiger animated:YES completion:nil];
-//}
+
+- (IBAction)clickedXerox:(id)sender
+{
+    isXerox = YES;
+    isOtsy = NO;
+    isAshe = NO;
+    isTiger = NO;
+}
+
+- (IBAction)clickedOtsy:(id)sender
+{
+    isXerox = NO;
+    isOtsy = YES;
+    isAshe = NO;
+    isTiger = NO;
+}
+
+- (IBAction)clickedAshe:(id)sender
+{
+    isXerox = NO;
+    isOtsy = NO;
+    isAshe = YES;
+    isTiger = NO;
+}
+
+- (IBAction)clickedTiger:(id)sender
+{
+    isXerox = NO;
+    isOtsy = NO;
+    isAshe = NO;
+    isTiger = YES;
+}
+
 @end

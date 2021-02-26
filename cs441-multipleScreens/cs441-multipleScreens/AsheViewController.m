@@ -12,10 +12,17 @@
 @end
 
 @implementation AsheViewController
+@synthesize connectorClass;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (connectorClass.isAshe == YES){
+        [label setText:@"Ashe is your favorite cat :)"];
+    }
+    if (connectorClass.isAshe == NO){
+        [label setText:@"Ashe is NOT your favorite cat :("];
+    }
 }
 
 /*

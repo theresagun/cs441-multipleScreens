@@ -9,8 +9,10 @@
 #import "Connector.h"
 
 @interface ViewController : UIViewController{
-    NSString *stringToPass;
-    IBOutlet UITextField *tf;
+    BOOL isXerox;
+    BOOL isOtsy;
+    BOOL isAshe;
+    BOOL isTiger;
 }
 
 @property (nonatomic, strong) ViewController *viewController;

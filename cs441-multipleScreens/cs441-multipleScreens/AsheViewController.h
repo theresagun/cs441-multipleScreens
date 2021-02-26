@@ -7,11 +7,15 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
+#import "Connector.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AsheViewController : UIViewController
-@property (nonatomic, assign) BOOL isFav;
+@interface AsheViewController : UIViewController{
+    IBOutlet UILabel *label;
+
+}
+@property (nonatomic, strong) Connector *connectorClass;
 
 @end
 

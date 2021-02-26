@@ -12,10 +12,17 @@
 @end
 
 @implementation TigerViewController
+@synthesize connectorClass;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (connectorClass.isTiger == YES){
+        [label setText:@"Tiger is your favorite cat :)"];
+    }
+    if (connectorClass.isTiger == NO){
+        [label setText:@"Tiger is NOT your favorite cat :("];
+    }
 }
 
 /*

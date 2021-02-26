@@ -12,10 +12,17 @@
 @end
 
 @implementation OtsyViewController
+@synthesize connectorClass;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (connectorClass.isOtsy == YES){
+        [label setText:@"Otsy is your favorite cat :)"];
+    }
+    if (connectorClass.isOtsy == NO){
+        [label setText:@"Otsy is NOT your favorite cat :("];
+    }
 }
 
 /*

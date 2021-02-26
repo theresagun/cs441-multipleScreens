@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
     IBOutlet UILabel *labelX;
 
 }
-@property (nonatomic, assign) BOOL isFav;
 @property (nonatomic, strong) Connector *connectorClass;
 @end
 
