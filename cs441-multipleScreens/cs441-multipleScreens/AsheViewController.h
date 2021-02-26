@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AsheViewController : UIViewController
+@property (nonatomic, assign) BOOL isFav;
 
 @end
 

@@ -12,10 +12,22 @@
 @end
 
 @implementation SecondViewController
+//@synthesize labelX;
+@synthesize connectorClass;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"in loading second");
+    labelX.text = connectorClass.stringBeingPassed;
+    [self.view addSubview:labelX];
+//    if (_isFav == YES) {
+//        [labelX setText:@"Xerox is your favorite cat :)"];
+//    }
+//    else{
+//        [labelX setText:@"Xerox is NOT your favorite cat :("];
+//
+//    }
 }
 
 /*
@@ -28,9 +40,5 @@
 }
 */
 
-- (IBAction)secondMethod
-{
-    NSLog(@"Hi");
-}
 
 @end

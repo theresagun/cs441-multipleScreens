@@ -6,9 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Connector.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSString *stringToPass;
+    IBOutlet UITextField *tf;
+}
 
+@property (nonatomic, strong) ViewController *viewController;
+@property (nonatomic, strong) Connector *connectorClass;
 
 @end
 

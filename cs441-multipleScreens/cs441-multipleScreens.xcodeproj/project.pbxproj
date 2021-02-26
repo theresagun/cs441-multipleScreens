@@ -17,6 +17,7 @@
 		346262B325E3FD0200C78FD7 /* cs441_multipleScreensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262B225E3FD0200C78FD7 /* cs441_multipleScreensTests.m */; };
 		346262BE25E3FD0200C78FD7 /* cs441_multipleScreensUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262BD25E3FD0200C78FD7 /* cs441_multipleScreensUITests.m */; };
 		346262D325E4004400C78FD7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346262D225E4004400C78FD7 /* SecondViewController.m */; };
+		346F12DD25E96729002BA0A7 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 346F12DC25E96729002BA0A7 /* Connector.m */; };
 		34AB42F025E6A30100B5A90A /* xerox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42EF25E6A30100B5A90A /* xerox.jpg */; };
 		34AB42F525E6A59B00B5A90A /* ashe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42F425E6A59B00B5A90A /* ashe.jpg */; };
 		34AB42FA25E6A5F300B5A90A /* tiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34AB42F925E6A5F300B5A90A /* tiger.jpg */; };
@@ -64,14 +65,16 @@
 		346262BF25E3FD0200C78FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		346262D125E4004400C78FD7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		346262D225E4004400C78FD7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		346F12DB25E96729002BA0A7 /* Connector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connector.h; sourceTree = "<group>"; };
+		346F12DC25E96729002BA0A7 /* Connector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Connector.m; sourceTree = "<group>"; };
 		34AB42EF25E6A30100B5A90A /* xerox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xerox.jpg; sourceTree = "<group>"; };
 		34AB42F425E6A59B00B5A90A /* ashe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ashe.jpg; sourceTree = "<group>"; };
 		34AB42F925E6A5F300B5A90A /* tiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiger.jpg; sourceTree = "<group>"; };
 		34AB42FE25E6A66400B5A90A /* otsy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = otsy.jpg; sourceTree = "<group>"; };
 		34AB430325E6A8A500B5A90A /* OtsyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtsyViewController.h; sourceTree = "<group>"; };
 		34AB430425E6A8A500B5A90A /* OtsyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtsyViewController.m; sourceTree = "<group>"; };
-		34AB430925E6A9D000B5A90A /* AsheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AsheViewController.h; path = "cs441-multipleScreens/AsheViewController.h"; sourceTree = "<group>"; };
-		34AB430A25E6A9D000B5A90A /* AsheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AsheViewController.m; path = "cs441-multipleScreens/AsheViewController.m"; sourceTree = "<group>"; };
+		34AB430925E6A9D000B5A90A /* AsheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsheViewController.h; sourceTree = "<group>"; };
+		34AB430A25E6A9D000B5A90A /* AsheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsheViewController.m; sourceTree = "<group>"; };
 		34AB430F25E6AA1100B5A90A /* TigerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TigerViewController.h; sourceTree = "<group>"; };
 		34AB431025E6AA1100B5A90A /* TigerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +107,6 @@
 		3462628A25E3FD0100C78FD7 = {
 			isa = PBXGroup;
 			children = (
-				34AB430925E6A9D000B5A90A /* AsheViewController.h */,
-				34AB430A25E6A9D000B5A90A /* AsheViewController.m */,
 				3462629525E3FD0100C78FD7 /* cs441-multipleScreens */,
 				346262B125E3FD0200C78FD7 /* cs441-multipleScreensTests */,
 				346262BC25E3FD0200C78FD7 /* cs441-multipleScreensUITests */,
@@ -133,8 +134,12 @@
 				3462629925E3FD0100C78FD7 /* SceneDelegate.h */,
 				3462629A25E3FD0100C78FD7 /* SceneDelegate.m */,
 				3462629C25E3FD0100C78FD7 /* ViewController.h */,
+				346F12DB25E96729002BA0A7 /* Connector.h */,
+				346F12DC25E96729002BA0A7 /* Connector.m */,
 				3462629D25E3FD0100C78FD7 /* ViewController.m */,
 				3462629F25E3FD0100C78FD7 /* Main.storyboard */,
+				34AB430925E6A9D000B5A90A /* AsheViewController.h */,
+				34AB430A25E6A9D000B5A90A /* AsheViewController.m */,
 				34AB430F25E6AA1100B5A90A /* TigerViewController.h */,
 				34AB431025E6AA1100B5A90A /* TigerViewController.m */,
 				34AB430325E6A8A500B5A90A /* OtsyViewController.h */,
@@ -309,6 +314,7 @@
 				346262A925E3FD0200C78FD7 /* main.m in Sources */,
 				3462629B25E3FD0100C78FD7 /* SceneDelegate.m in Sources */,
 				34AB430B25E6A9D000B5A90A /* AsheViewController.m in Sources */,
+				346F12DD25E96729002BA0A7 /* Connector.m in Sources */,
 				34AB430525E6A8A500B5A90A /* OtsyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
